@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="hotCell" rowHeight="89" id="KGk-i7-Jjw" customClass="HotTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QbC-md-O27">
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="QbC-md-O27" secondAttribute="height" multiplier="1:1" id="Muq-Rj-B2G"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第一次就好" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnM-bh-AoP">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="梁静茹" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JE8-T4-7WT">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="ckf-vq-Dkf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6Q-pk-32X">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="l6Q-pk-32X" secondAttribute="height" multiplier="1:1" id="FxK-8E-DFe"/>
+                            <constraint firstAttribute="width" constant="26" id="TNA-W0-PLg"/>
+                            <constraint firstAttribute="width" secondItem="l6Q-pk-32X" secondAttribute="height" multiplier="1:1" id="WcR-j4-FjJ"/>
+                            <constraint firstAttribute="height" constant="26" id="jai-vP-hOR"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="player_play.png">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FxK-8E-DFe"/>
+                                <exclude reference="WcR-j4-FjJ"/>
+                            </mask>
+                        </variation>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMg-8I-LTJ">
+                        <state key="normal" title="Button">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="XMg-8I-LTJ" firstAttribute="top" secondItem="QbC-md-O27" secondAttribute="top" id="16e-eN-WpM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="l6Q-pk-32X" secondAttribute="trailing" constant="-1" id="3rZ-jR-Ozi"/>
+                    <constraint firstItem="JE8-T4-7WT" firstAttribute="leading" secondItem="QbC-md-O27" secondAttribute="trailing" constant="10" id="5SK-t4-4H0"/>
+                    <constraint firstItem="QbC-md-O27" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-15" id="8cx-fP-PUQ"/>
+                    <constraint firstAttribute="centerY" secondItem="l6Q-pk-32X" secondAttribute="centerY" id="9GX-uj-bdK"/>
+                    <constraint firstItem="l6Q-pk-32X" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="1" id="IRr-xd-fQj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="JE8-T4-7WT" secondAttribute="bottom" id="Jc2-bd-Fhu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JE8-T4-7WT" secondAttribute="trailing" constant="50" id="KGN-AN-mBr"/>
+                    <constraint firstItem="XMg-8I-LTJ" firstAttribute="leading" secondItem="QbC-md-O27" secondAttribute="leading" id="LCM-aL-9LA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="QbC-md-O27" secondAttribute="bottom" constant="-8" id="TZ1-dP-epF"/>
+                    <constraint firstItem="WnM-bh-AoP" firstAttribute="leading" secondItem="QbC-md-O27" secondAttribute="trailing" constant="10" id="UrH-js-Ix6"/>
+                    <constraint firstItem="XMg-8I-LTJ" firstAttribute="trailing" secondItem="QbC-md-O27" secondAttribute="trailing" id="Vkh-k2-LQn"/>
+                    <constraint firstItem="WnM-bh-AoP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="52" id="Xgj-0Z-nu1"/>
+                    <constraint firstItem="QbC-md-O27" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="Zyi-VT-Y9N"/>
+                    <constraint firstItem="XMg-8I-LTJ" firstAttribute="bottom" secondItem="QbC-md-O27" secondAttribute="bottom" id="e4Z-QV-O4J"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WnM-bh-AoP" secondAttribute="trailing" constant="50" id="iNI-c8-bOp"/>
+                    <constraint firstItem="WnM-bh-AoP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="re4-kf-WTq"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Xgj-0Z-nu1"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="musicIConBtn" destination="XMg-8I-LTJ" id="biY-WT-Eps"/>
+                <outlet property="musicIcon" destination="QbC-md-O27" id="eRW-JB-q5M"/>
+                <outlet property="musicInfo" destination="JE8-T4-7WT" id="CjW-kf-eh5"/>
+                <outlet property="musicName" destination="WnM-bh-AoP" id="bwT-5J-di1"/>
+                <outlet property="playButton" destination="l6Q-pk-32X" id="Ozg-GN-njb"/>
+            </connections>
+            <point key="canvasLocation" x="73" y="83"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="player_play.png" width="66" height="64"/>
+    </resources>
+</document>

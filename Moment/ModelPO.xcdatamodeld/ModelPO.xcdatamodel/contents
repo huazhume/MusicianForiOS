@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="MusicPo" representedClassName="MusicPo" syncable="YES">
+        <attribute name="albumid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="albumpic_big" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="alumname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="m4a" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="singerid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="singername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="songid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="songname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MusicPo" positionX="-63" positionY="-18" width="128" height="210"/>
+    </elements>
+</model>
